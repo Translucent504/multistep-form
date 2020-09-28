@@ -25,14 +25,14 @@ jobs:
       with:
         node-version: 12
         
-    - name: Yarn Setup
-      run: npm install -g yarn surge
+    - name: Setup
+      run: npm install -g surge
       
-    - name: Yarn Install Dependencies
-      run: yarn install
+    - name: Install Dependencies
+      run: npm install
 
-    - name: Yarn Build
-      run: yarn build
+    - name: Build
+      run: npm build
     
     - name: Surge Deployment
       run: surge ./build eru-multistepform.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
