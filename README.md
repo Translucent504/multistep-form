@@ -2,7 +2,7 @@
 [Deployment](https://eru-multistepform.surge.sh/)
 
 There are 2 forms here:
-  1. Single Signup Form 
+  1. Single Signup Form  
 ![signup](signup.png)
   2. MultiStepForm 
 ![multistep1](multistep1.png)
