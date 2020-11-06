@@ -8,12 +8,17 @@ import {
 } from 'react-router-dom'
 import Multistep from './features/Multistep/Multistep'
 
+const style = {
+    fontSize: "4rem",
+    textAlign: "center"    
+}
+
 const App = () => {
     return (
         <Router>
-            <nav>
-                <NavLink activeStyle={{border:'dashed black 1px'}} to='signup'> Signup </NavLink>
-                <NavLink activeStyle={{border:'dashed black 1px'}} to='multistep'> MultiStep</NavLink>
+            <nav style={style}>
+                <NavLink activeStyle={{border:'dashed black 3px'}} to='signup'> Signup </NavLink>
+                <NavLink activeStyle={{border:'dashed black 3px'}} to='multistep'> MultiStep</NavLink>
             </nav>
             <main>
                 <Routes>
